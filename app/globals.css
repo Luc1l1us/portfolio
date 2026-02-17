@@ -24,4 +24,18 @@ body {
   background: var(--white);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
+
+.main-box {
+  height: 100vh;
+}
+
+.first-column {
+  overflow: hidden;
+}
+
+.second-column {
+  overflow: scroll;
+}
+
