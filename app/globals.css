@@ -4,6 +4,7 @@
   --background: #ffffff;
   --white: #ffffff;
   --color-silver: #c0c0c0;
+  --color-silver-100: #eeeeee;
   --foreground: #171717;
 }
 
@@ -11,7 +12,7 @@
   --color-silver-base: #c0c0c0;
   --color-silver-100: #eeeeee;
   --color-silver-300: #898989;
-  --color-silver-700: #9a9a9a;
+  --color-silver-700: #202020;
 }
 
 @theme inline {
@@ -42,6 +43,11 @@ body {
 .first-column {
   overflow: hidden;
   border-right: 4px solid var(--color-silver);
+}
+
+.projects-title, .experience-title, 
+.about-title, .contact-title {
+  border-bottom: 2px solid var(--color-silver-100);
 }
 
 .second-column {

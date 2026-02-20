@@ -4,7 +4,7 @@ export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
     //Change into 3 flex rows and scale
-    <div className="main-box flex flex-row justify-items-start m-20 pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-black">
+    <div className="main-box flex flex-row justify-items-start m-20 pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
       <div className="flex flex-col items-start gap-3 window-column bg-silver-base p-3 rounded-l-lg">
         
         <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full">
@@ -21,32 +21,37 @@ export default function Home() {
       <div className="flex flex-col first-column basis-1/3 ml-10 mr-10 mt-10 mb-10">
       {/* First part */}
         <div>
-          <div className="picture-box">
-            SAMPLE PICTURE
+          <div className="flex relative w-40 aspect-square picture-box grayscale">
+            <Image 
+              src="/drawingpfp.png"
+              alt="profilepic"
+              fill
+            ></Image>
           </div>
-          <p>full name</p>
-          <p>role/occupation</p>
+          <p>edzie mari navarra</p>
+          <p>software developer</p>
         </div>
 
       {/* Second part */}
-        <div className="flex flex-col navigation gap-2 mt-20">
-          <div className="">
-            * projects          
-          </div>
-          <div className="">
-            * experience
-          </div>
-          <div className="">
-            * about
-          </div>
-          <div className="">
-            * contact
-          </div>
+        <div className="flex flex-col navigation gap-2 mt-20 mr-auto">
+          <button className="flex hover:bg-silver-base">
+            ● projects          
+          </button>
+          <button className="flex hover:bg-silver-base">
+            ● experience
+          </button>
+          <button className="flex hover:bg-silver-base">
+            ● about
+          </button>
+          <button className="flex hover:bg-silver-base">
+            ● contact
+          </button>
         </div>
 
       {/* Third part */}
         <div className="first-bottom mt-auto">
           * all rights reserved
+          <p> </p>
         </div>
       </div>
 
@@ -61,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className="projects-container mt-15 ">
-          <div className="">
+          <div className="projects-title">
             projects
           </div>
           
@@ -114,7 +119,9 @@ export default function Home() {
           </div>
           
           <div className="experience-container mt-15">
-            experience
+            <p className="experience-title">
+              experience              
+            </p>
             <div className="flex">
               1st company logo
             <div>
@@ -133,7 +140,9 @@ export default function Home() {
           </div>
 
           <div className="about-container mt-15">
-            about
+            <p className="about-title"> 
+              about 
+            </p>
               <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -146,7 +155,9 @@ export default function Home() {
           </div>
 
           <div className="contact-container mt-15 mb-10">
-            contact
+            <p className="contact-title">
+              contact
+            </p>
               <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
