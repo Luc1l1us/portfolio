@@ -4,19 +4,35 @@ export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
     //Change into 3 flex rows and scale
-    <div className="main-box flex flex-column justify-items-start m-20 px-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-black">
+    <div className="main-box flex flex-row justify-items-start m-20 pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-black">
+      <div className="flex flex-col items-start gap-3 window-column bg-silver-base p-3 rounded-l-lg">
+        
+        <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full">
+        </button>
+        <button className="flex second-button w-4 h-4 bg-silver-300 rounded-full">
+        </button>
+        <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full">
+        </button>
+        <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full mt-auto">
+        </button>
+
+      </div>
       {/*First Column (should redirect the user to what the user had clicked)*/}
-      <div className="first-column basis-1/3 mr-10 mt-10">
+      <div className="flex flex-col first-column basis-1/3 ml-10 mr-10 mt-10 mb-10">
+      {/* First part */}
         <div>
-          SAMPLE PICTURE
-        </div>
-        edzie mari navarra
-        <div>
-          Software Engineer
+          <div className="picture-box">
+            SAMPLE PICTURE
+          </div>
+          <p>full name</p>
+          <p>role/occupation</p>
         </div>
 
-        <div className="navigation mt-10">
-          * projects
+      {/* Second part */}
+        <div className="flex flex-col navigation gap-2 mt-20">
+          <div className="">
+            * projects          
+          </div>
           <div className="">
             * experience
           </div>
@@ -28,7 +44,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="first-bottom mt-50">
+      {/* Third part */}
+        <div className="first-bottom mt-auto">
           * all rights reserved
         </div>
       </div>
@@ -43,7 +60,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="projects-container mt-15">
+        <div className="projects-container mt-15 ">
           <div className="">
             projects
           </div>
