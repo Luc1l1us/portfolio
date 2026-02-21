@@ -13,6 +13,16 @@
   --color-silver-100: #eeeeee;
   --color-silver-300: #898989;
   --color-silver-700: #202020;
+  --animate-hover-move: hover-move 0.2s ease-in-out forwards;
+}
+
+@keyframes hover-move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }
 
 @theme inline {
@@ -45,8 +55,10 @@ body {
   border-right: 4px solid var(--color-silver);
 }
 
-.projects-title, .experience-title, 
-.about-title, .contact-title {
+.projects-title,
+.experience-title,
+.about-title,
+.contact-title {
   border-bottom: 2px solid var(--color-silver-100);
 }
 
@@ -57,3 +69,10 @@ body {
   -ms-overflow-style: none;
 }
 
+.bold-title {
+  font-weight: bold;
+}
+
+.description {
+  font-weight: 100;
+}
