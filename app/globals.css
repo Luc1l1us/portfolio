@@ -30,6 +30,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-ubuntu: var(--font-ubuntu-mono);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
+
+const ubuntuMono = Ubuntu_Mono({
+  weight: ["400", "700"],
+  variable: "--font-ubuntu-mono",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ubuntuMono.variable} antialiased`}
       >
         {children}
       </body>

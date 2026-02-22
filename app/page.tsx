@@ -59,7 +59,7 @@ export default function Home() {
 
       {/*Second Column (should be scrollable)*/}
       <div className="second-column basis-2/3 mt-10">
-        GREETINGS!
+        <p className="font-ubuntu">GREETINGS!</p>
         <div className="">
           my name is SAMPLE NAME
           <div className="description">I am a sample description</div>
