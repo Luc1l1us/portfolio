@@ -24,18 +24,30 @@ export default function Home() {
 
         {/* Second part */}
         <div className="flex flex-col navigation gap-2 mt-20 mr-auto">
-          <button className="flex hover:bg-silver-base hover:animate-hover-move transition-all">
+          <a
+            href="#projects"
+            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
+          >
             ● projects
-          </button>
-          <button className="flex hover:bg-silver-base hover:animate-hover-move transition-all">
+          </a>
+          <a
+            href="#experience"
+            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
+          >
             ● experience
-          </button>
-          <button className="flex hover:bg-silver-base hover:animate-hover-move transition-all">
+          </a>
+          <a
+            href="#about"
+            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
+          >
             ● about
-          </button>
-          <button className="flex hover:bg-silver-base hover:animate-hover-move transition-all">
+          </a>
+          <a
+            href="#contact"
+            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
+          >
             ● contact
-          </button>
+          </a>
         </div>
 
         {/* Third part */}
@@ -47,12 +59,12 @@ export default function Home() {
 
       {/*Second Column (should be scrollable)*/}
       <div className="second-column basis-2/3 mt-10">
-        GREETINGS!
+        <p className="font-ubuntu">GREETINGS!</p>
         <div className="">
           my name is SAMPLE NAME
           <div className="description">I am a sample description</div>
         </div>
-        <div className="projects-container mt-15 ">
+        <section id="projects" className="projects-container mt-15 ">
           <div className="projects-title">projects</div>
 
           <div className="flex">
@@ -96,63 +108,58 @@ export default function Home() {
               sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
           </div>
-
-          <div className="experience-container mt-15">
-            <p className="experience-title">experience</p>
-            <div className="flex mt-5">
-              <div className="first-experience-logo">
-                <Image
-                  className="mr-15 rounded-lg drop-shadow-lg"
-                  src="/symph-logo.jpg"
-                  width={40}
-                  height={40}
-                  alt="Symph company logo"
-                />
-              </div>
-              <div>
-                <div className="bold-title">Symph</div>
-                <p className="description">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
-                </p>
-              </div>
+        </section>
+        <section id="experience" className="experience-container mt-15">
+          <p className="experience-title">experience</p>
+          <div className="flex mt-5">
+            <div className="first-experience-logo">
+              <Image
+                className="mr-15 rounded-lg drop-shadow-lg"
+                src="/symph-logo.jpg"
+                width={40}
+                height={40}
+                alt="Symph company logo"
+              />
+            </div>
+            <div>
+              <div className="bold-title">Symph</div>
+              <p className="description">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
             </div>
           </div>
-
-          <div className="about-container mt-15">
-            <p className="about-title">about</p>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-          </div>
-
-          <div className="contact-container mt-15 mb-10">
-            <p className="contact-title">contact</p>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-          </div>
-
-          {/*2nd column should be scrollable*/}
-        </div>
+        </section>
+        <section id="about" className="about-container mt-15">
+          <p className="about-title">about</p>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </section>
+        <section id="contact" className="contact-container mt-15 mb-10">
+          <p className="contact-title">contact</p>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </section>
+        {/*2nd column should be scrollable*/}
       </div>
     </div>
   );
