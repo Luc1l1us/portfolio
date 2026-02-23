@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Ubuntu_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Ubuntu_Mono, Doto } from "next/font/google";
 import "./globals.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
+
+const doto = Doto({
+  weight: ["200", "500", "700"],
+  variable: "--font-doto",
+});
 
 const ubuntuMono = Ubuntu_Mono({
   weight: ["400", "700"],
@@ -30,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${ubuntuMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ubuntuMono.variable} ${doto.variable} antialiased`}
       >
         {children}
       </body>
