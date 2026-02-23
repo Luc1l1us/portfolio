@@ -1,4 +1,9 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -9,17 +14,28 @@ export default function Home() {
         <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full"></button>
         <button className="flex second-button w-4 h-4 bg-silver-300 rounded-full"></button>
         <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full"></button>
-        <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full mt-auto"></button>
+        <div className="flex flex-1 space-x-2 items-center justify-center w-4 h-6 font-doto font-bold rotate-90 whitespace-nowrap">
+          <span>p</span>
+          <span>o</span>
+          <span>r</span>
+          <span>t</span>
+          <span>f</span>
+          <span>o</span>
+          <span>l</span>
+          <span>i</span>
+          <span>o</span>
+        </div>
+        <button className="flex fourth-button w-4 h-4 bg-silver-700 rounded-full mt-auto"></button>
       </div>
       {/*First Column (should redirect the user to what the user had clicked)*/}
-      <div className="flex flex-col first-column basis-1/3 ml-10 mr-10 mt-10 mb-10">
+      <div className="flex flex-col items-center first-column basis-1/3 m-10 font-ubuntu">
         {/* First part */}
         <div>
           <div className="flex relative w-40 aspect-square picture-box grayscale">
             <Image src="/drawingpfp.png" alt="profilepic" fill></Image>
           </div>
-          <p>edzie mari navarra</p>
-          <p>software developer</p>
+          <p className="font-bold text-xl">Edzie Mari Navarra</p>
+          <p>Software Developer</p>
         </div>
 
         {/* Second part */}
@@ -51,18 +67,47 @@ export default function Home() {
         </div>
 
         {/* Third part */}
-        <div className="first-bottom mt-auto">
-          * all rights reserved
-          <p> </p>
+        <div className="first-column-bottom mt-auto">
+          <div className="social-icons">
+            <FontAwesomeIcon
+              className="hover:text-silver-base text-black"
+              size="2xl"
+              icon={faGithub}
+            />
+            <FontAwesomeIcon
+              className="hover:text-silver-base text-black"
+              size="2xl"
+              icon={faLinkedin}
+            />
+            <FontAwesomeIcon
+              className="hover:text-silver-base text-black"
+              size="2xl"
+              icon={faEnvelope}
+            />
+            <FontAwesomeIcon
+              className="hover:text-silver-base text-black"
+              size="2xl"
+              icon={faFacebook}
+            />{" "}
+          </div>
+          <div className="view-resume hover:text-silver-base">
+            <FontAwesomeIcon icon={faRightLong} />
+            <span> View Resume</span>
+          </div>
         </div>
       </div>
 
       {/*Second Column (should be scrollable)*/}
-      <div className="second-column basis-2/3 mt-10">
-        <p className="font-ubuntu">GREETINGS!</p>
+      <div className="second-column basis-2/3 mt-10 font-ubuntu">
+        <p className="font-doto text-2xl">GREETINGS!</p>
         <div className="">
-          my name is SAMPLE NAME
-          <div className="description">I am a sample description</div>
+          My Name is Edzie Mari Navarra
+          <div className="description font-bold text-2xl">
+            i love to <span className="text-gray-300">design</span> and{" "}
+            <span className="text-gray-200">develop </span>
+            apps that would later{" "}
+            <span className="text-gray-400">benefit </span> me!
+          </div>
         </div>
         <section id="projects" className="projects-container mt-15 ">
           <div className="projects-title">projects</div>
