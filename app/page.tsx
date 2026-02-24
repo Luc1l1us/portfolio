@@ -112,46 +112,65 @@ export default function Home() {
         <section id="projects" className="projects-container mt-15 ">
           <div className="projects-title">projects</div>
 
-          <div className="flex">
-            1st project icon
-            <div>1st project name</div>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+          <div className="flex mt-5">
+            <div className="first-project-logo">
+              <Image
+                className="mr-15 rounded-lg drop-shadow-lg"
+                src="/symph-logo.jpg"
+                width={40}
+                height={40}
+                alt="Symph company logo"
+              />
+            </div>
+            <div>
+              <div className="bold-title">Monochrome-Switcher</div>
+              <p className="description">
+                Developed a high-performance cross-platform AI switcher panel
+                that unifies Linux and Windows UI behavior, improves
+                responsiveness, and reduces platform-specific overhead.
+              </p>
+            </div>
           </div>
 
           <div className="flex mt-5">
-            2nd project icon
-            <div>2nd project name</div>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <div className="second-project-logo">
+              <Image
+                className="mr-15 rounded-lg drop-shadow-lg"
+                src="/symph-logo.jpg"
+                width={40}
+                height={40}
+                alt="Symph company logo"
+              />
+            </div>
+            <div>
+              <div className="bold-title">City Rush Hour</div>
+              <p className="description">
+                Built a high-fidelity traffic simulation in Unity that
+                integrates A* pathfinding, behavioral traffic modeling, and
+                real-world congestion scenarios to create dynamic, lifelike
+                vehicle systems.
+              </p>
+            </div>
           </div>
 
           <div className="flex mt-5">
-            3rd project icon
-            <div>3rd project name</div>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <div className="second-project-logo">
+              <Image
+                className="mr-15 rounded-lg drop-shadow-lg"
+                src="/symph-logo.jpg"
+                width={40}
+                height={40}
+                alt="Symph company logo"
+              />
+            </div>
+            <div>
+              <div className="bold-title">Forex_app</div>
+              <p className="description">
+                Developed a scalable cryptocurrency tracking app powered by
+                Flutter and Flask, utilizing Firebase and the TwelveData API to
+                provide real-time price updates and portfolio analytics.
+              </p>
+            </div>
           </div>
         </section>
         <section id="experience" className="experience-container mt-15">
@@ -169,39 +188,40 @@ export default function Home() {
             <div>
               <div className="bold-title">Symph</div>
               <p className="description">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Played a dual-role in a client deployment project—developing
+                features and resolving bugs before leading QA automation efforts
+                with Cypress to enhance test coverage and overall product
+                stability.
               </p>
             </div>
           </div>
         </section>
         <section id="about" className="about-container mt-15">
-          <p className="about-title">about</p>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+          <p className="about-title ">about</p>
+          <p className="mt-5">
+            I’m a software developer passionate about building systems that are
+            both technically robust and thoughtfully designed. I enjoy working
+            across the stack—from architecting backend APIs and automation
+            pipelines to crafting clean, responsive user interfaces. My projects
+            range from cross-platform desktop applications and algorithm-driven
+            simulations to full-stack mobile apps integrating real-time
+            financial data. I’m especially interested in system design,
+            performance optimization, and writing maintainable, scalable code. I
+            thrive in collaborative environments, continuously improving
+            workflows, automating processes where possible, and turning complex
+            problems into clean, reliable solutions.
           </p>
         </section>
         <section id="contact" className="contact-container mt-15 mb-10">
           <p className="contact-title">contact</p>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+          <p className="mt-5">
+            I’m always open to discussing new opportunities, collaborations, or
+            interesting technical problems. Whether it's software engineering,
+            automation, systems work, or full-stack development — feel free to
+            reach out.
+            <p>📧 Email: your.email@example.com </p>
+            <p>💼 LinkedIn: linkedin.com/in/yourname</p>
+            <p>💻 GitHub: github.com/yourusername</p>
           </p>
         </section>
         {/*2nd column should be scrollable*/}
