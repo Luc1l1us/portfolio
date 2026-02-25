@@ -227,9 +227,9 @@ export default function Home() {
             interesting technical problems. Whether it's software engineering,
             automation, systems work, or full-stack development — feel free to
             reach out.
-            <p>📧 Email: your.email@example.com </p>
-            <p>💼 LinkedIn: linkedin.com/in/yourname</p>
-            <p>💻 GitHub: github.com/yourusername</p>
+            <p>📧 Email: edziemarin@gmail.com </p>
+            <p>💼 LinkedIn: linkedin.com/in/edz-navarra</p>
+            <p>💻 GitHub: github.com/Luc1l1us</p>
           </div>
         </section>
         {/*2nd column should be scrollable*/}
