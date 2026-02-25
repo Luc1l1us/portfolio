@@ -11,6 +11,7 @@
 @theme {
   --color-silver-base: #c0c0c0;
   --color-silver-100: #eeeeee;
+  --color-silver-200: #e2e2e2;
   --color-silver-300: #898989;
   --color-silver-700: #202020;
   --animate-hover-move: hover-move 0.2s ease-in-out forwards;

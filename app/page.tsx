@@ -10,7 +10,7 @@ export default function Home() {
     //Change hardcoded padding and margin to scale
     //Change into 3 flex rows and scale
     <div className="main-box flex flex-row justify-items-start m-20 pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
-      <div className="flex flex-col items-start gap-3 window-column bg-silver-base p-3 rounded-l-lg">
+      <div className="flex flex-col items-start gap-3 window-column hover:bg-silver-200 bg-silver-base p-3 rounded-l-lg">
         <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full"></button>
         <button className="flex second-button w-4 h-4 bg-silver-300 rounded-full"></button>
         <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full"></button>
@@ -69,30 +69,36 @@ export default function Home() {
         {/* Third part */}
         <div className="first-column-bottom mt-auto">
           <div className="social-icons">
-            <FontAwesomeIcon
-              className="hover:text-silver-base text-black"
-              size="2xl"
-              icon={faGithub}
-            />
-            <FontAwesomeIcon
-              className="hover:text-silver-base text-black"
-              size="2xl"
-              icon={faLinkedin}
-            />
-            <FontAwesomeIcon
-              className="hover:text-silver-base text-black"
-              size="2xl"
-              icon={faEnvelope}
-            />
-            <FontAwesomeIcon
-              className="hover:text-silver-base text-black"
-              size="2xl"
-              icon={faFacebook}
-            />{" "}
+            <a target="_blank" href="https://github.com/Luc1l1us">
+              <FontAwesomeIcon
+                className="hover:text-silver-base text-black"
+                size="2xl"
+                icon={faGithub}
+              />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/edz-navarra/">
+              <FontAwesomeIcon
+                className="hover:text-silver-base text-black"
+                size="2xl"
+                icon={faLinkedin}
+              />
+            </a>
+            <a
+              aria-label="Send me an email"
+              href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
+            >
+              <FontAwesomeIcon
+                className="hover:text-silver-base text-black"
+                size="2xl"
+                icon={faEnvelope}
+              />
+            </a>
           </div>
           <div className="view-resume hover:text-silver-base">
-            <FontAwesomeIcon icon={faRightLong} />
-            <span> View Resume</span>
+            <a href="/My_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faRightLong} />
+              <span> View Resume</span>
+            </a>
           </div>
         </div>
       </div>
@@ -109,7 +115,7 @@ export default function Home() {
             <span className="text-gray-400">benefit </span> me!
           </div>
         </div>
-        <section id="projects" className="projects-container mt-15 ">
+        <section id="projects" className="projects-container mt-10 ">
           <div className="projects-title">projects</div>
 
           <div className="flex mt-5">
@@ -186,7 +192,9 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="bold-title">Symph</div>
+              <div className="bold-title">
+                Symph (Software Developer Intern/QA Automation Tester)
+              </div>
               <p className="description">
                 Played a dual-role in a client deployment project—developing
                 features and resolving bugs before leading QA automation efforts
@@ -214,7 +222,7 @@ export default function Home() {
         </section>
         <section id="contact" className="contact-container mt-15 mb-10">
           <p className="contact-title">contact</p>
-          <p className="mt-5">
+          <div className="mt-5">
             I’m always open to discussing new opportunities, collaborations, or
             interesting technical problems. Whether it's software engineering,
             automation, systems work, or full-stack development — feel free to
@@ -222,7 +230,7 @@ export default function Home() {
             <p>📧 Email: your.email@example.com </p>
             <p>💼 LinkedIn: linkedin.com/in/yourname</p>
             <p>💻 GitHub: github.com/yourusername</p>
-          </p>
+          </div>
         </section>
         {/*2nd column should be scrollable*/}
       </div>
