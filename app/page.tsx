@@ -122,10 +122,10 @@ export default function Home() {
             <div className="first-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/symph-logo.jpg"
+                src="/monoswitcher.png"
                 width={40}
                 height={40}
-                alt="Symph company logo"
+                alt="Monoswitcher project logo"
               />
             </div>
             <div>
