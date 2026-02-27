@@ -142,10 +142,10 @@ export default function Home() {
             <div className="second-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/symph-logo.jpg"
+                src="/city-rush-hour.png"
                 width={40}
                 height={40}
-                alt="Symph company logo"
+                alt="CityRushHour project logo"
               />
             </div>
             <div>
@@ -163,14 +163,14 @@ export default function Home() {
             <div className="second-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/symph-logo.jpg"
+                src="/Coin-pulse-alt.png"
                 width={40}
                 height={40}
-                alt="Symph company logo"
+                alt="CoinPulse project logo"
               />
             </div>
             <div>
-              <div className="bold-title">Forex_app</div>
+              <div className="bold-title">Coin Pulse</div>
               <p className="description">
                 Developed a scalable cryptocurrency tracking app powered by
                 Flutter and Flask, utilizing Firebase and the TwelveData API to
