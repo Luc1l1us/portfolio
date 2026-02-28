@@ -131,15 +131,37 @@ export default function Home() {
             <div>
               <div className="bold-title">Monochrome-Switcher</div>
               <p className="description">
-                Developed a high-performance cross-platform AI switcher panel
-                that unifies Linux and Windows UI behavior, improves
-                responsiveness, and reduces platform-specific overhead.
+                Building a multi-model AI orchestration platform that enables
+                users to interact with up to five LLMs simultaneously through a
+                unified, tab-based interface with normalized API handling and
+                concurrent response streaming.
               </p>
             </div>
           </div>
 
           <div className="flex mt-5">
             <div className="second-project-logo">
+              <Image
+                className="mr-15 rounded-lg drop-shadow-lg"
+                src="/monoswitcher.png"
+                width={40}
+                height={40}
+                alt="Mumei project logo"
+              />
+            </div>
+            <div>
+              <div className="bold-title">Mumei</div>
+              <p className="description">
+                Developed a Python-based Discord bot integrating the OpenAI API
+                and the Instructure Canvas REST API to enable AI-driven
+                conversations, automated moderation, and real-time assignment
+                tracking.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex mt-5">
+            <div className="third-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
                 src="/city-rush-hour.png"
@@ -160,7 +182,7 @@ export default function Home() {
           </div>
 
           <div className="flex mt-5">
-            <div className="second-project-logo">
+            <div className="fourth-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
                 src="/Coin-pulse-alt.png"
