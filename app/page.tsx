@@ -143,7 +143,7 @@ export default function Home() {
             <div className="second-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/monoswitcher.png"
+                src="/mumei.png"
                 width={40}
                 height={40}
                 alt="Mumei project logo"
