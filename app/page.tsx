@@ -4,11 +4,11 @@ import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
-import ProfileImage from "/drawingpfp.png";
-import MonochromeSwitcher from "/monoswitcher.png";
-import Mumei from "/mumei.png";
-import CityRushHour from "/city-rush-hour.png";
-import CoinPulse from "Coin-pulse-alt.png";
+import ProfileImage from "./drawingpfp.png";
+import MonochromeSwitcher from "./monoswitcher.png";
+import Mumei from "./mumei.png";
+import CityRushHour from "./city-rush-hour.png";
+import CoinPulse from "./Coin-pulse-alt.png";
 
 export default function Home() {
   return (
