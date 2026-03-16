@@ -4,6 +4,11 @@ import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
+import ProfileImage from "/drawingpfp.png";
+import MonochromeSwitcher from "/monoswitcher.png";
+import Mumei from "/mumei.png";
+import CityRushHour from "/city-rush-hour.png";
+import CoinPulse from "Coin-pulse-alt.png";
 
 export default function Home() {
   return (
@@ -32,12 +37,7 @@ export default function Home() {
         {/* First part */}
         <div>
           <div className="flex relative w-40 aspect-square picture-box grayscale">
-            <Image
-              src="/drawingpfp.png"
-              alt="profilepic"
-              fill
-              unoptimized
-            ></Image>
+            <Image src={ProfileImage} alt="profilepic" fill unoptimized></Image>
           </div>
           <p className="font-bold text-xl">Edzie Mari Navarra</p>
           <p>Software Developer</p>
@@ -127,7 +127,7 @@ export default function Home() {
             <div className="first-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/monoswitcher.png"
+                src={MonochromeSwitcher}
                 width={40}
                 height={40}
                 alt="Monoswitcher project logo"
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="second-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/mumei.png"
+                src={Mumei}
                 width={40}
                 height={40}
                 alt="Mumei project logo"
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="third-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/city-rush-hour.png"
+                src={CityRushHour}
                 width={40}
                 height={40}
                 alt="CityRushHour project logo"
@@ -197,7 +197,7 @@ export default function Home() {
             <div className="fourth-project-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/Coin-pulse-alt.png"
+                src={CoinPulse}
                 width={40}
                 height={40}
                 alt="CoinPulse project logo"
