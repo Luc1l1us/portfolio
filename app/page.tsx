@@ -32,7 +32,12 @@ export default function Home() {
         {/* First part */}
         <div>
           <div className="flex relative w-40 aspect-square picture-box grayscale">
-            <Image src="/drawingpfp.png" alt="profilepic" fill></Image>
+            <Image
+              src="/drawingpfp.png"
+              alt="profilepic"
+              fill
+              unoptimized
+            ></Image>
           </div>
           <p className="font-bold text-xl">Edzie Mari Navarra</p>
           <p>Software Developer</p>
@@ -126,10 +131,13 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="Monoswitcher project logo"
+                unoptimized
               />
             </div>
             <div>
-              <div className="bold-title">Monochrome-Switcher</div>
+              <a href="https://github.com/Luc1l1us/monochrome-switcher">
+                <div className="bold-title">Monochrome-Switcher</div>
+              </a>
               <p className="description">
                 Building a multi-model AI orchestration platform that enables
                 users to interact with up to five LLMs simultaneously through a
@@ -147,10 +155,13 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="Mumei project logo"
+                unoptimized
               />
             </div>
             <div>
-              <div className="bold-title">Mumei</div>
+              <a href="https://github.com/Luc1l1us/MuseMei">
+                <div className="bold-title">Mumei</div>
+              </a>
               <p className="description">
                 Developed a Python-based Discord bot integrating the OpenAI API
                 and the Instructure Canvas REST API to enable AI-driven
@@ -168,6 +179,7 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="CityRushHour project logo"
+                unoptimized
               />
             </div>
             <div>
@@ -189,10 +201,13 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="CoinPulse project logo"
+                unoptimized
               />
             </div>
             <div>
-              <div className="bold-title">Coin Pulse</div>
+              <a href="github.com/Luc1l1us/Forex_app">
+                <div className="bold-title">Coin Pulse</div>
+              </a>
               <p className="description">
                 Developed a scalable cryptocurrency tracking app powered by
                 Flutter and Flask, utilizing Firebase and the TwelveData API to
@@ -211,6 +226,7 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="Symph company logo"
+                unoptimized
               />
             </div>
             <div>
