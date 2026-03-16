@@ -4,11 +4,12 @@ import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
-import ProfileImage from "./assets/drawingpfp.png";
-import MonochromeSwitcher from "./assets/monoswitcher.png";
-import Mumei from "./assets/mumei.png";
-import CityRushHour from "./assets/city-rush-hour.png";
-import CoinPulse from "./assets/Coin-pulse-alt.png";
+import ProfileImage from "../assets/drawingpfp.png";
+import MonochromeSwitcher from "../assets/monoswitcher.png";
+import Mumei from "../assets/mumei.png";
+import CityRushHour from "../assets/city-rush-hour.png";
+import CoinPulse from "../assets/Coin-pulse-alt.png";
+import Symph from "../assets/symph-logo.jpg";
 
 export default function Home() {
   return (
@@ -222,7 +223,7 @@ export default function Home() {
             <div className="first-experience-logo">
               <Image
                 className="mr-15 rounded-lg drop-shadow-lg"
-                src="/symph-logo.jpg"
+                src={Symph}
                 width={40}
                 height={40}
                 alt="Symph company logo"
