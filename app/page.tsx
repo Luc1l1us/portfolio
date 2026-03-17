@@ -115,9 +115,9 @@ export default function Home() {
         <div className="">
           My Name is Edzie Mari Navarra
           <div className="description font-bold text-2xl">
-            i love to <span className="text-gray-300">design</span> and{" "}
-            <span className="text-gray-200">develop </span>
-            apps that would later{" "}
+            Passionate about <span className="text-gray-300">designing</span>{" "}
+            and <span className="text-gray-200">developing </span>
+            apps that help people and bring ideas to life.{" "}
             <span className="text-gray-400">benefit </span> me!
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <a href="github.com/Luc1l1us/Forex_app">
+              <a href="https://github.com/Luc1l1us/Forex_app">
                 <div className="bold-title">Coin Pulse</div>
               </a>
               <p className="description">
