@@ -115,10 +115,10 @@ export default function Home() {
         <div className="">
           My Name is Edzie Mari Navarra
           <div className="description font-bold text-2xl">
-            i love to <span className="text-gray-300">design</span> and{" "}
-            <span className="text-gray-200">develop </span>
-            apps that would later{" "}
-            <span className="text-gray-400">benefit </span> me!
+            Passionate about <span className="text-gray-300">designing</span>{" "}
+            and <span className="text-gray-200">developing </span>
+            apps that <span className="text-gray-400">help people </span>
+            and <span className="text-gray-400"> bring ideas </span> to life.
           </div>
         </div>
         <section id="projects" className="projects-container mt-10 ">
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="flex mt-5">
             <div className="first-project-logo">
               <Image
-                className="mr-15 rounded-lg drop-shadow-lg"
+                className="mr-15 rounded-lg drop-shadow-lg "
                 src={MonochromeSwitcher}
                 width={40}
                 height={40}
@@ -136,7 +136,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <a href="https://github.com/Luc1l1us/monochrome-switcher">
+              <a
+                href="https://github.com/Luc1l1us/monochrome-switcher"
+                className="hover:text-gray-400"
+              >
                 <div className="bold-title">Monochrome-Switcher</div>
               </a>
               <p className="description">
@@ -160,7 +163,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <a href="https://github.com/Luc1l1us/MuseMei">
+              <a
+                href="https://github.com/Luc1l1us/MuseMei"
+                className="hover:text-gray-400"
+              >
                 <div className="bold-title">Mumei</div>
               </a>
               <p className="description">
@@ -206,7 +212,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <a href="github.com/Luc1l1us/Forex_app">
+              <a
+                href="https://github.com/Luc1l1us/Forex_app"
+                className="hover:text-gray-400"
+              >
                 <div className="bold-title">Coin Pulse</div>
               </a>
               <p className="description">
