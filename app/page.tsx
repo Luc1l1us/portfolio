@@ -101,7 +101,11 @@ export default function Home() {
             </a>
           </div>
           <div className="view-resume hover:text-silver-base">
-            <a href="My_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="portfolio/My_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faRightLong} />
               <span> View Resume</span>
             </a>
