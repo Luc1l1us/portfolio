@@ -15,7 +15,7 @@ export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
     //Change into 3 flex rows and scale
-    <div className="main-box flex flex-row justify-items-start m-20 pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
+    <div className="h-[100vh] sm:h-[100vh] md:h-[85vh] lg:h-[80vh] flex flex-row justify-items-start md:m-20 md:pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
       <div className="flex flex-col items-start gap-3 window-column hover:bg-silver-200 bg-silver-base p-3 rounded-l-lg">
         <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full"></button>
         <button className="flex second-button w-4 h-4 bg-silver-300 rounded-full"></button>
@@ -37,75 +37,47 @@ export default function Home() {
       <div className="flex flex-col items-center first-column basis-1/3 m-10 font-ubuntu">
         {/* First part */}
         <div>
-          <div className="flex relative w-40 aspect-square picture-box grayscale">
+          <div className="flex relative w-13 sm:w-24 md:w-32 lg:w-40 aspect-square picture-box grayscale">
             <Image src={ProfileImage} alt="profilepic" fill unoptimized></Image>
           </div>
-          <p className="font-bold text-xl">Edzie Mari Navarra</p>
-          <p>Software Developer</p>
+          <p className="font-bold text-sm lg:text-xl ">Edzie Mari Navarra</p>
+          <p className="text-sm lg:text-xl ">Software Developer</p>
         </div>
 
         {/* Second part */}
         <div className="flex flex-col navigation gap-2 mt-20 mr-auto">
-          <a
-            href="#projects"
-            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
-          >
+          <a href="#projects" className="hover-navigation">
             ● projects
           </a>
-          <a
-            href="#experience"
-            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
-          >
+          <a href="#experience" className="hover-navigation">
             ● experience
           </a>
-          <a
-            href="#about"
-            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
-          >
+          <a href="#about" className="hover-navigation">
             ● about
           </a>
-          <a
-            href="#contact"
-            className="flex hover:bg-silver-base hover:animate-hover-move transition-all"
-          >
+          <a href="#contact" className="hover-navigation">
             ● contact
           </a>
         </div>
 
         {/* Third part */}
-        <div className="first-column-bottom mt-auto">
+        <div className="first-column-bottom mt-auto sm:flex-col">
           <div className="social-icons">
             <a target="_blank" href="https://github.com/Luc1l1us">
-              <FontAwesomeIcon
-                className="hover:text-silver-base text-black"
-                size="2xl"
-                icon={faGithub}
-              />
+              <FontAwesomeIcon className="socials" icon={faGithub} />
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/edz-navarra/">
-              <FontAwesomeIcon
-                className="hover:text-silver-base text-black"
-                size="2xl"
-                icon={faLinkedin}
-              />
+              <FontAwesomeIcon className="socials" icon={faLinkedin} />
             </a>
             <a
               aria-label="Send me an email"
               href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
             >
-              <FontAwesomeIcon
-                className="hover:text-silver-base text-black"
-                size="2xl"
-                icon={faEnvelope}
-              />
+              <FontAwesomeIcon className="socials" icon={faEnvelope} />
             </a>
           </div>
           <div className="view-resume hover:text-silver-base">
-            <a
-              href="portfolio/My_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/My_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faRightLong} />
               <span> View Resume</span>
             </a>
