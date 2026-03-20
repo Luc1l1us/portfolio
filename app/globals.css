@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -56,6 +58,15 @@ body {
 .first-column {
   overflow: hidden;
   border-right: 4px solid var(--color-silver);
+}
+
+@layer components {
+  .hover-navigation {
+    @apply flex hover:bg-silver-base hover:animate-hover-move transition-all text-base;
+  }
+  .socials {
+    @apply hover:text-silver-base text-black text-2xl;
+  }
 }
 
 .projects-title,
