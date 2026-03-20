@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
@@ -77,10 +78,14 @@ export default function Home() {
             </a>
           </div>
           <div className="view-resume hover:text-silver-base">
-            <a href="/My_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="/My_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faRightLong} />
               <span> View Resume</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
