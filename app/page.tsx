@@ -243,10 +243,10 @@ export default function Home() {
             range from cross-platform desktop applications and algorithm-driven
             simulations to full-stack mobile apps integrating real-time
             financial data. I’m especially interested in system design,
-            performance optimization, and writing maintainable, scalable code. I
-            thrive in collaborative environments, continuously improving
-            workflows, automating processes where possible, and turning complex
-            problems into clean, reliable solutions.
+            performance optimization, and writing maintainable, scalable code.
+            I'm continuously improving workflows, automating processes if
+            possible, and turning complex problems into clean, reliable
+            solutions.
           </p>
         </section>
         <section id="contact" className="contact-container mt-15 mb-10">
@@ -254,8 +254,8 @@ export default function Home() {
           <div className="mt-5">
             I’m always open to discussing new opportunities, collaborations, or
             interesting technical problems. Whether it's software engineering,
-            automation, systems work, or full-stack development — feel free to
-            reach out.
+            automation, systems work, or full-stack development. Please feel
+            free to reach out.
             <p>📧 Email: edziemarin@gmail.com </p>
             <p>💼 LinkedIn: linkedin.com/in/edz-navarra</p>
             <p>💻 GitHub: github.com/Luc1l1us</p>
