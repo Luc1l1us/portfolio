@@ -117,12 +117,20 @@ export default function Home() {
               />
             </div>
             <div>
-              <a
-                href="https://github.com/Luc1l1us/monochrome-switcher"
-                className="hover:text-gray-400"
-              >
-                <div className="bold-title">Monochrome-Switcher</div>
-              </a>
+              <div className="flex flex-row justify-between">
+                <a
+                  href="https://github.com/Luc1l1us/monochrome-switcher"
+                  className="hover:text-gray-400"
+                >
+                  <div className="bold-title">Monochrome-Switcher</div>
+                </a>
+                <a
+                  href="https://github.com/Luc1l1us/monochrome-switcher"
+                  className="hover:text-gray-400"
+                >
+                  <div className="bold-title">Live Demo</div>
+                </a>
+              </div>
               <p className="description">
                 Building a multi-model AI orchestration platform that enables
                 users to interact with up to five LLMs simultaneously through a
