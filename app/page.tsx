@@ -128,7 +128,7 @@ export default function Home() {
                   href="https://github.com/Luc1l1us/monochrome-switcher"
                   className="hover:text-gray-400"
                 >
-                  <div className="bold-title">Live Demo</div>
+                  {/*<div className="bold-title">Live Demo</div>*/}
                 </a>
               </div>
               <p className="description">
