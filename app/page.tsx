@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { TechBadge } from "./components/techbadge";
+import Projects from "./components/projects";
+import projects from "./data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 import ProfileImage from "../assets/drawingpfp.png";
@@ -12,46 +15,6 @@ import CityRushHour from "../assets/city-rush-hour.png";
 import CoinPulse from "../assets/Coin-pulse-alt.png";
 import Symph from "../assets/symph-logo.jpg";
 
-const techColors = {
-  TypeScript: "bg-[#3178c6] text-white",
-  JavaScript: "bg-[#f7df1e] text-black",
-  Python: "bg-[#3776ab] text-white",
-  Go: "bg-[#00add8] text-white",
-  "C++": "bg-[#00599c] text-white",
-  "C#": "bg-[#68217a] text-white",
-  Java: "bg-[#ed8b00] text-white",
-  Dart: "bg-[#0175c2] text-white",
-  PHP: "bg-[#777bb4] text-white",
-  "Next.js": "bg-[#000000] text-white",
-  React: "bg-[#81e1fc] text-white",
-  "Tailwind CSS": "bg-[#06b6d4] text-white",
-  Flutter: "bg-[#02569b] text-white",
-  Wails: "bg-[#000000] text-white",
-  Unity: "bg-[#000000] text-white",
-  "Express.js": "bg-[#000000] text-white",
-  Firebase: "bg-[#ffca28] text-black",
-  MySQL: "bg-[#4479a1] text-white",
-  Linux: "bg-[#000000] text-white",
-  Flask: "bg-[#000000] text-white",
-  "OpenRouter API": "bg-[#000000] text-white",
-  "Canvas REST API": "bg-[#e34f26] text-white",
-  "OpenAI API": "bg-[#412991] text-white",
-  "Gemini API": "bg-[#4285f4] text-white",
-  "Twelve Data API": "bg-[#ff6b35] text-white",
-  "Discord.py": "bg-[#000000] text-white",
-  "A* Algorithm": "bg-[#f59e0b] text-white",
-  "Nagel-Schreckenberg Model": "bg-[#4b7dcc] text-white",
-};
-
-export function TechBadge({ name }) {
-  return (
-    <span
-      className={`px-3 py-1 rounded-full text-xs font-medium ${techColors[name] || "bg-gray-500/15 text-gray-400"}`}
-    >
-      {name}
-    </span>
-  );
-}
 export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
@@ -72,7 +35,24 @@ export default function Home() {
           <span>i</span>
           <span>o</span>
         </div>
-        <button className="flex fourth-button w-4 h-4 bg-silver-700 rounded-full mt-auto"></button>
+        <a target="_blank" href="https://github.com/Luc1l1us">
+          <button className="flex w-6 h-6">
+            <FontAwesomeIcon className="socials" icon={faGithub} />
+          </button>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/edz-navarra/">
+          <button className="flex w-6 h-6">
+            <FontAwesomeIcon className="socials" icon={faLinkedinIn} />
+          </button>
+        </a>
+        <a
+          aria-label="Send me an email"
+          href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
+        >
+          <button className="flex w-6 h-6 mt-auto ">
+            <FontAwesomeIcon className="socials" icon={faEnvelope} />
+          </button>
+        </a>
       </div>
       {/*First Column (should redirect the user to what the user had clicked)*/}
       <div className="flex flex-col items-center first-column basis-1/3 m-10 font-ubuntu">
@@ -103,7 +83,7 @@ export default function Home() {
 
         {/* Third part */}
         <div className="first-column-bottom mt-auto sm:flex-col">
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <a target="_blank" href="https://github.com/Luc1l1us">
               <FontAwesomeIcon className="socials" icon={faGithub} />
             </a>
@@ -115,8 +95,8 @@ export default function Home() {
               href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
             >
               <FontAwesomeIcon className="socials" icon={faEnvelope} />
-            </a>
-          </div>
+            </a> 
+          </div> */}
           <div className="view-resume hover:text-silver-base">
             <Link
               href="/My_Resume.pdf"
@@ -145,147 +125,9 @@ export default function Home() {
         <section id="projects" className="projects-container mt-10 ">
           <div className="projects-title">projects</div>
 
-          <div className="flex mt-5">
-            <div className="first-project-logo">
-              <Image
-                className="mr-15 rounded-lg drop-shadow-lg "
-                src={MonochromeSwitcher}
-                width={40}
-                height={40}
-                alt="Monoswitcher project logo"
-                unoptimized
-              />
-            </div>
-            <div>
-              <div className="flex flex-row justify-between">
-                <a
-                  href="https://github.com/Luc1l1us/monochrome-switcher"
-                  className="hover:text-gray-400"
-                >
-                  <div className="bold-title">Monochrome-Switcher</div>
-                </a>
-                <a
-                  href="https://github.com/Luc1l1us/monochrome-switcher"
-                  className="hover:text-gray-400"
-                >
-                  {/*<div className="bold-title">Live Demo</div>*/}
-                </a>
-              </div>
-              <p className="description">
-                Building a multi-model AI orchestration platform that enables
-                users to interact with up to five LLMs simultaneously through a
-                unified, tab-based interface with normalized API handling and
-                concurrent response streaming.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="Go" />
-                <TechBadge name="React" />
-                <TechBadge name="Wails" />
-                <TechBadge name="OpenRouter API" />
-                <TechBadge name="Gemini API" />
-                <TechBadge name="Linux" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex mt-5">
-            <div className="second-project-logo">
-              <Image
-                className="mr-15 rounded-lg drop-shadow-lg"
-                src={Mumei}
-                width={40}
-                height={40}
-                alt="Mumei project logo"
-                unoptimized
-              />
-            </div>
-            <div>
-              <a
-                href="https://github.com/Luc1l1us/MumeiBot"
-                className="hover:text-gray-400"
-              >
-                <div className="bold-title">Mumei</div>
-              </a>
-              <p className="description">
-                Developed a Python-based Discord bot integrating the OpenAI API
-                and the Instructure Canvas REST API to enable AI-driven
-                conversations, automated moderation, and real-time assignment
-                tracking.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="Python" />
-                <TechBadge name="Discord.py" />
-                <TechBadge name="OpenAI API" />
-                <TechBadge name="Canvas REST API" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex mt-5">
-            <div className="third-project-logo">
-              <Image
-                className="mr-15 rounded-lg drop-shadow-lg"
-                src={CityRushHour}
-                width={40}
-                height={40}
-                alt="CityRushHour project logo"
-                unoptimized
-              />
-            </div>
-            <div>
-              <a
-                href="https://github.com/Luc1l1us/CapstoneProject"
-                className="hover:text-gray-400"
-              >
-                <div className="bold-title">City Rush Hour</div>
-              </a>
-              <p className="description">
-                Built a high-fidelity traffic simulation in Unity that
-                integrates A* pathfinding, behavioral traffic modeling, and
-                real-world congestion scenarios to create dynamic, lifelike
-                vehicle systems.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="C#" />
-                <TechBadge name="Unity" />
-                <TechBadge name="A* Algorithm" />
-                <TechBadge name="Nagel-Schreckenberg Model" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex mt-5">
-            <div className="fourth-project-logo">
-              <Image
-                className="mr-15 rounded-lg drop-shadow-lg"
-                src={CoinPulse}
-                width={40}
-                height={40}
-                alt="CoinPulse project logo"
-                unoptimized
-              />
-            </div>
-            <div>
-              <a
-                href="https://github.com/Luc1l1us/Forex_app"
-                className="hover:text-gray-400"
-              >
-                <div className="bold-title">Coin Pulse</div>
-              </a>
-              <p className="description">
-                Developed a scalable cryptocurrency tracking app powered by
-                Flutter and Flask, utilizing Firebase and the TwelveData API to
-                provide real-time price updates and portfolio analytics.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="Flutter" />
-                <TechBadge name="Python" />
-                <TechBadge name="Flask" />
-                <TechBadge name="Firebase" />
-                <TechBadge name="Twelve Data API" />
-              </div>
-            </div>
-          </div>
+          {projects.map((project) => (
+            <Projects key={project.projname} {...project} />
+          ))}
         </section>
         <section id="experience" className="experience-container mt-15">
           <p className="experience-title">experience</p>
