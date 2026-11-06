@@ -12,6 +12,46 @@ import CityRushHour from "../assets/city-rush-hour.png";
 import CoinPulse from "../assets/Coin-pulse-alt.png";
 import Symph from "../assets/symph-logo.jpg";
 
+const techColors = {
+  TypeScript: "bg-[#3178c6] text-white",
+  JavaScript: "bg-[#f7df1e] text-black",
+  Python: "bg-[#3776ab] text-white",
+  Go: "bg-[#00add8] text-white",
+  "C++": "bg-[#00599c] text-white",
+  "C#": "bg-[#68217a] text-white",
+  Java: "bg-[#ed8b00] text-white",
+  Dart: "bg-[#0175c2] text-white",
+  PHP: "bg-[#777bb4] text-white",
+  "Next.js": "bg-[#000000] text-white",
+  React: "bg-[#81e1fc] text-white",
+  "Tailwind CSS": "bg-[#06b6d4] text-white",
+  Flutter: "bg-[#02569b] text-white",
+  Wails: "bg-[#000000] text-white",
+  Unity: "bg-[#000000] text-white",
+  "Express.js": "bg-[#000000] text-white",
+  Firebase: "bg-[#ffca28] text-black",
+  MySQL: "bg-[#4479a1] text-white",
+  Linux: "bg-[#000000] text-white",
+  Flask: "bg-[#000000] text-white",
+  "OpenRouter API": "bg-[#000000] text-white",
+  "Canvas REST API": "bg-[#e34f26] text-white",
+  "OpenAI API": "bg-[#412991] text-white",
+  "Gemini API": "bg-[#4285f4] text-white",
+  "Twelve Data API": "bg-[#ff6b35] text-white",
+  "Discord.py": "bg-[#000000] text-white",
+  "A* Algorithm": "bg-[#f59e0b] text-white",
+  "Nagel-Schreckenberg Model": "bg-[#4b7dcc] text-white",
+};
+
+export function TechBadge({ name }) {
+  return (
+    <span
+      className={`px-3 py-1 rounded-full text-xs font-medium ${techColors[name] || "bg-gray-500/15 text-gray-400"}`}
+    >
+      {name}
+    </span>
+  );
+}
 export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
@@ -137,6 +177,14 @@ export default function Home() {
                 unified, tab-based interface with normalized API handling and
                 concurrent response streaming.
               </p>
+              <div className="flex flex-wrap gap-2">
+                <TechBadge name="Go" />
+                <TechBadge name="React" />
+                <TechBadge name="Wails" />
+                <TechBadge name="OpenRouter API" />
+                <TechBadge name="Gemini API" />
+                <TechBadge name="Linux" />
+              </div>
             </div>
           </div>
 
@@ -164,6 +212,12 @@ export default function Home() {
                 conversations, automated moderation, and real-time assignment
                 tracking.
               </p>
+              <div className="flex flex-wrap gap-2">
+                <TechBadge name="Python" />
+                <TechBadge name="Discord.py" />
+                <TechBadge name="OpenAI API" />
+                <TechBadge name="Canvas REST API" />
+              </div>
             </div>
           </div>
 
@@ -179,13 +233,24 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="bold-title">City Rush Hour</div>
+              <a
+                href="https://github.com/Luc1l1us/CapstoneProject"
+                className="hover:text-gray-400"
+              >
+                <div className="bold-title">City Rush Hour</div>
+              </a>
               <p className="description">
                 Built a high-fidelity traffic simulation in Unity that
                 integrates A* pathfinding, behavioral traffic modeling, and
                 real-world congestion scenarios to create dynamic, lifelike
                 vehicle systems.
               </p>
+              <div className="flex flex-wrap gap-2">
+                <TechBadge name="C#" />
+                <TechBadge name="Unity" />
+                <TechBadge name="A* Algorithm" />
+                <TechBadge name="Nagel-Schreckenberg Model" />
+              </div>
             </div>
           </div>
 
@@ -212,6 +277,13 @@ export default function Home() {
                 Flutter and Flask, utilizing Firebase and the TwelveData API to
                 provide real-time price updates and portfolio analytics.
               </p>
+              <div className="flex flex-wrap gap-2">
+                <TechBadge name="Flutter" />
+                <TechBadge name="Python" />
+                <TechBadge name="Flask" />
+                <TechBadge name="Firebase" />
+                <TechBadge name="Twelve Data API" />
+              </div>
             </div>
           </div>
         </section>
