@@ -153,7 +153,7 @@ export default function Home() {
             </div>
             <div>
               <a
-                href="https://github.com/Luc1l1us/MuseMei"
+                href="https://github.com/Luc1l1us/MumeiBot"
                 className="hover:text-gray-400"
               >
                 <div className="bold-title">Mumei</div>
