@@ -1,59 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { TechBadge } from "./components/techbadge";
 import Projects from "./components/projects";
 import projects from "./data/projects";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 import ProfileImage from "../assets/drawingpfp.png";
-import MonochromeSwitcher from "../assets/monoswitcher.png";
-import Mumei from "../assets/mumei.png";
-import CityRushHour from "../assets/city-rush-hour.png";
-import CoinPulse from "../assets/Coin-pulse-alt.png";
 import Symph from "../assets/symph-logo.jpg";
+import Taskbar from "./components/taskbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
     //Change hardcoded padding and margin to scale
     //Change into 3 flex rows and scale
     <div className="h-[100vh] sm:h-[100vh] md:h-[85vh] lg:h-[80vh] flex flex-row justify-items-start md:m-20 md:pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
-      <div className="flex flex-col items-start gap-3 window-column hover:bg-silver-200 bg-silver-base p-3 rounded-l-lg">
-        <button className="flex first-button w-4 h-4 bg-silver-100 rounded-full"></button>
-        <button className="flex second-button w-4 h-4 bg-silver-300 rounded-full"></button>
-        <button className="flex third-button w-4 h-4 bg-silver-700 rounded-full"></button>
-        <div className="flex flex-1 space-x-2 items-center justify-center w-4 h-6 font-doto font-bold rotate-90 whitespace-nowrap">
-          <span>p</span>
-          <span>o</span>
-          <span>r</span>
-          <span>t</span>
-          <span>f</span>
-          <span>o</span>
-          <span>l</span>
-          <span>i</span>
-          <span>o</span>
-        </div>
-        <a target="_blank" href="https://github.com/Luc1l1us">
-          <button className="flex w-6 h-6">
-            <FontAwesomeIcon className="socials" icon={faGithub} />
-          </button>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/edz-navarra/">
-          <button className="flex w-6 h-6">
-            <FontAwesomeIcon className="socials" icon={faLinkedinIn} />
-          </button>
-        </a>
-        <a
-          aria-label="Send me an email"
-          href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
-        >
-          <button className="flex w-6 h-6 mt-auto ">
-            <FontAwesomeIcon className="socials" icon={faEnvelope} />
-          </button>
-        </a>
-      </div>
+      <Taskbar />
       {/*First Column (should redirect the user to what the user had clicked)*/}
       <div className="flex flex-col items-center first-column basis-1/3 m-10 font-ubuntu">
         {/* First part */}
@@ -83,20 +43,6 @@ export default function Home() {
 
         {/* Third part */}
         <div className="first-column-bottom mt-auto sm:flex-col">
-          {/* <div className="social-icons">
-            <a target="_blank" href="https://github.com/Luc1l1us">
-              <FontAwesomeIcon className="socials" icon={faGithub} />
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/edz-navarra/">
-              <FontAwesomeIcon className="socials" icon={faLinkedin} />
-            </a>
-            <a
-              aria-label="Send me an email"
-              href="mailto:edziemarin@gmail.com?subject=Porfolio Inquiry"
-            >
-              <FontAwesomeIcon className="socials" icon={faEnvelope} />
-            </a> 
-          </div> */}
           <div className="view-resume hover:text-silver-base">
             <Link
               href="/My_Resume.pdf"
@@ -124,7 +70,6 @@ export default function Home() {
         </div>
         <section id="projects" className="projects-container mt-10 ">
           <div className="projects-title">projects</div>
-
           {projects.map((project) => (
             <Projects key={project.projname} {...project} />
           ))}
