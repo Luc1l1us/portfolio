@@ -62,6 +62,8 @@ body {
 
 @layer components {
   .hover-navigation {
+    position: relative;
+    z-index: 50;
     @apply flex hover:bg-silver-base hover:animate-hover-move transition-all text-base;
   }
   .socials {

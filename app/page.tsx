@@ -68,7 +68,7 @@ export default function Home() {
             and <span className="text-gray-400"> bring ideas </span> to life.
           </div>
         </div>
-        <section id="projects" className="projects-container mt-10 ">
+        <section id="projects" className="projects-container mt-10">
           <div className="projects-title">projects</div>
           {projects.map((project) => (
             <Projects key={project.projname} {...project} />
