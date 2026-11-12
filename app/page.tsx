@@ -15,7 +15,7 @@ export default function Home() {
     <div className="h-[100vh] sm:h-[100vh] md:h-[85vh] lg:h-[80vh] flex flex-row justify-items-start md:m-20 md:pr-30 rounded-lg border border-white shadow-[0_0_20px_rgba(0,0,0,0.15)] text-silver-700">
       <Taskbar />
       {/*First Column (should redirect the user to what the user had clicked)*/}
-      <div className="flex flex-col items-center first-column basis-1/3 m-10 font-ubuntu">
+      <div className="flex flex-col items-center first-column basis-1/3 m-6 font-ubuntu">
         {/* First part */}
         <div>
           <div className="flex relative w-13 sm:w-24 md:w-32 lg:w-40 aspect-square picture-box grayscale">
