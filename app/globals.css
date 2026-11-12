@@ -58,7 +58,7 @@ body {
 .first-column {
   scrollbar-width: none;
   overflow: scroll;
-  border-right: 4px solid var(--color-silver);
+  border-right: 2px solid var(--color-silver-100);
 }
 
 @layer components {
