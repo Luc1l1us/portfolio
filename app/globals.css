@@ -56,7 +56,8 @@ body {
 }
 
 .first-column {
-  overflow: hidden;
+  scrollbar-width: none;
+  overflow: scroll;
   border-right: 4px solid var(--color-silver);
 }
 
