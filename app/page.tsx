@@ -128,7 +128,6 @@ export default function Home() {
             <p>💻 GitHub: github.com/Luc1l1us</p>
           </div>
         </section>
-        {/*2nd column should be scrollable*/}
       </div>
     </div>
   );
